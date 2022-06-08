@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
 :root {
+    // color
+    --red: #ff0000;
+    --black: #000;
+    --text-color: #333;
     // default layout
     --default-layout-header-height: 60px;
     --default-layout-width: 1000px;
@@ -22,4 +26,16 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
